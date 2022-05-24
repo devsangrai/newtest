@@ -684,7 +684,7 @@ background: transparent;
 border: solid 2px #ff8900;
 text-transform: uppercase;
 transition: all .3s ease 0s;
-position: relative;margin: 15px 0;
+position: relative;margin: 15px 0 0;
 }
 .abt-img {
 	max-width: 400px;
