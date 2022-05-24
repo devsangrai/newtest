@@ -709,66 +709,7 @@ position: relative;margin: 15px 0 0;
 }
 section .bg-white{background:#fff!important;}
 
-/*--------------------------------------------------------------
-# Values
---------------------------------------------------------------*/
-.values .box {
-  padding: 30px;
-  box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
-  text-align: center;
-  transition: 0.3s;
-  height: 100%;
-}
-.values .box img {
-  padding: 30px 50px;
-  transition: 0.5s;
-  transform: scale(1.1);
-}
-.values .box h3 {
-  font-size: 24px;
-  color: #012970;
-  font-weight: 700;
-  margin-bottom: 18px;
-}
-.values .box:hover {
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-}
-.values .box:hover img {
-  transform: scale(1);
-}
 
-/*--------------------------------------------------------------
-# Counts
---------------------------------------------------------------*/
-.counts {
-  padding: 70px 0 60px;
-}
-.counts .count-box {
-  display: flex;
-  align-items: center;
-  padding: 30px;
-  width: 100%;
-  background: #fff;
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-}
-.counts .count-box i {
-  font-size: 42px;
-  line-height: 0;
-  margin-right: 20px;
-  color: #4154f1;
-}
-.counts .count-box span {
-  font-size: 36px;
-  display: block;
-  font-weight: 600;
-  color: #0b198f;
-}
-.counts .count-box p {
-  padding: 0;
-  margin: 0;
-  font-family: "Nunito", sans-serif;
-  font-size: 14px;
-}
 
 /*--------------------------------------------------------------
 # Features
@@ -999,7 +940,160 @@ section .bg-white{background:#fff!important;}
 .services .service-box:hover .icon {
   background: #fff;
 }
+.feture-tabs .nav-pills {
+	background: #f2f2f2;
+	border-radius: 25px;
+	box-shadow: 1px 4px 3px #dcdcdc;
+}
+.feature-tabs .nav-pills li {
+	width: 25%;
+	text-align: center;
+}
+.feature-tabs .nav-pills .nav-link.active, .feature-tabs .nav-pills .show > .nav-link, .feature-tabs .nav-pills .nav-link:hover {
+	color: #ff8a00;
+	background-color: transparent;position: relative;
+}
+.feture-tabs .nav-pills .nav-link {
+	color: #444;line-height: 37px;
+font-size: 18px;
+}
+.feture-tabs .nav-pills .nav-link .ft-img {
+	max-width: 25px;
+	transition: all 0.3s ease 0s;
+	margin-right: 5px;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../vendor/fonts/icomoon.eot?px2ep3');
+  src:  url('../vendor/fonts/icomoon.eot?px2ep3#iefix') format('embedded-opentype'),
+    url('../vendor/fonts/icomoon.ttf?px2ep3') format('truetype'),
+    url('../vendor/fonts/icomoon.woff?px2ep3') format('woff'),
+    url('../vendor/fonts/icomoon.svg?px2ep3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon-1:before {
+  content: "\e900";
+}
+.icon-icon-2:before {
+  content: "\e901";
+}
+.icon-icon-3:before {
+  content: "\e902";
+}
+.icon-icon-4:before {
+  content: "\e903";
+}
+.feture-tabs .nav-pills .nav-link span {
+	font-size: 23px;
+	margin-right: 5px;
+	position: relative;
+	top: 3px;
+	font-weight: 600;
+}
+.gpl-15{padding:0 15px;}
+.bg-callback {
+	background: #444;
+	background: #ff8900;
+	padding: 8px 40px;
+	margin-left: 0;
+	border-radius: 35px;
+	color: #ff8900;
+	border: solid 2px #ff8900;
+	color: #fff !important;
+	transition:all 0.5s ease 0s;
+}
+
+.list-serv {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+.list-serv li a {
+	display: block;
+	color: #444;
+	margin-bottom: 10px;
+	position: relative;
+	padding-left: 25px;transition: all .3s ease 0s;
+}
+.list-serv li a::before {
+	content: "";
+	content: "\f26b";
+	position: absolute;
+	left: 0;
+	display: inline-block;
+	font-family: bootstrap-icons !important;
+	font-size: 18px;
+	color: #ff8a00;transition: all .3s ease 0s;
+}
+.list-serv li a::after, .feture-tabs .nav-pills .nav-link::after {
+	content: "";
+	position: absolute;
+	left: 26px;
+	width:0;
+	height: 2px;
+	background: #ff8a00;
+	bottom: -3px;
+	opacity: 0;
+	width: 0;transition: all .3s ease 0s;
+}
+
+.list-serv li:hover a::after, .feture-tabs .nav-pills .nav-link:hover a::after{width:50px;opacity:1;}
+
+.list-serv li:hover a{color:#ff8a00}
+.feture-tabs .nav-pills .nav-link.active::after {
+	width: 70%;
+	opacity: 1;
+	left: 45px !important;
+	right: auto;
+	bottom:-1px;
+}
+.whyus-section{background:#fafafa;}
+.whyus-section .content {
+	background: #fafafa;
+}
+.whyus-section h4 {
+	font-size: 30px;
+}
+.whyus-section .gpl-15{margin-top:45px;}
+.whyus-section .nav-pills {
+	background: transparent;
+	border-radius: 25px;
+	box-shadow: none;
+}
+.whyus-section .nav-pills li a {
+	background: #fff5ef;
+	margin-right: 15px;
+}
+.whyus-section .nav-pills li:hover a, .whyus-section .nav-pills li a.active {
+	background: #ff8a00 !important;
+	color: #fff !important;
+}
+.whyus-section .nav-pills li a
+.whyus-section .nav-pills li a.nav-link::after {
+	height: 0;
+}
+.whyus-section .nav-pills li a.nav-link.active::after{opacity:0}
+.whyus-section .nav-pills li {
+	width: 33.33%;
+}
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
