@@ -115,17 +115,17 @@ section {
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 99999;
-  background:#ff8a00 ;
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  transition: all 0.4s;
+	position: fixed;
+	visibility: hidden;
+	opacity: 0;
+	right: 15px;
+	bottom: 15px;
+	z-index: 99999;
+	background: #ff8a00 !important;
+	width: 40px;
+	height: 40px;
+	border-radius: 4px;
+	transition: all 0.4s;
 }
 .back-to-top i {
   font-size: 24px;
@@ -1019,6 +1019,7 @@ font-size: 18px;
 	border: solid 2px #ff8900;
 	color: #fff !important;
 	transition:all 0.5s ease 0s;
+	margin-top: 20px;
 }
 
 .list-serv {
@@ -1072,7 +1073,7 @@ font-size: 18px;
 .whyus-section h4 {
 	font-size: 30px;
 }
-.whyus-section .gpl-15{margin-top:45px;}
+.whyus-section .gpl-15, .Service-section .gpl-15{margin-top:45px;}
 .whyus-section .nav-pills {
 	background: transparent;
 	border-radius: 25px;
@@ -1094,341 +1095,38 @@ font-size: 18px;
 .whyus-section .nav-pills li {
 	width: 33.33%;
 }
-/*--------------------------------------------------------------
-# Pricing
---------------------------------------------------------------*/
-.pricing .box {
-  padding: 40px 20px;
-  background: #fff;
-  text-align: center;
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-  border-radius: 4px;
-  position: relative;
-  overflow: hidden;
-  transition: 0.3s;
+.Service-section {
+	background: url('../img/service-bg1.png'),url('../img/service-bg2.png') ;
+	background-repeat:no-repeat no-repeat;
+	background-position:left top, bottom right;
+	
 }
-.pricing .box:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+.Service-section .content{background:transparent;}
+.Service-section p {
+	margin: 0;
 }
-.pricing h3 {
-  font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-.pricing .price {
-  font-size: 36px;
-  color: #444444;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-}
-.pricing .price sup {
-  font-size: 20px;
-  top: -15px;
-  left: -3px;
-}
-.pricing .price span {
-  color: #bababa;
-  font-size: 16px;
-  font-weight: 300;
-}
-.pricing img {
-  padding: 30px 40px;
-}
-.pricing ul {
-  padding: 0;
-  list-style: none;
-  color: #444444;
-  text-align: center;
-  line-height: 26px;
-  font-size: 16px;
-  margin-bottom: 25px;
-}
-.pricing ul li {
-  padding-bottom: 10px;
-}
-.pricing ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
-.pricing .btn-buy {
-  display: inline-block;
-  padding: 8px 40px 10px 40px;
-  border-radius: 50px;
-  color: #4154f1;
-  transition: none;
-  font-size: 16px;
-  font-weight: 400;
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  transition: 0.3s;
-  border: 1px solid #4154f1;
-}
-.pricing .btn-buy:hover {
-  background: #4154f1;
-  color: #fff;
-}
-.pricing .featured {
-  width: 200px;
-  position: absolute;
-  top: 18px;
-  right: -68px;
-  transform: rotate(45deg);
-  z-index: 1;
-  font-size: 14px;
-  padding: 1px 0 3px 0;
-  background: #4154f1;
-  color: #fff;
-}
-
-/*--------------------------------------------------------------
-# F.A.Q
---------------------------------------------------------------*/
-.faq .accordion-collapse {
-  border: 0;
-}
-.faq .accordion-button {
-  padding: 15px 15px 20px 0;
-  font-weight: 600;
-  border: 0;
-  font-size: 18px;
-  color: #444444;
-  text-align: left;
-}
-.faq .accordion-button:focus {
-  box-shadow: none;
-}
-.faq .accordion-button:not(.collapsed) {
-  background: none;
-  color: #4154f1;
-  border-bottom: 0;
-}
-.faq .accordion-body {
-  padding: 0 0 25px 0;
-  border: 0;
-}
-
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
-.portfolio #portfolio-flters {
-  padding: 0;
-  margin: 0 auto 25px auto;
-  list-style: none;
-  text-align: center;
-  background: white;
-  border-radius: 50px;
-  padding: 2px 15px;
-}
-.portfolio #portfolio-flters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 8px 20px 10px 20px;
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 1;
-  color: #444444;
-  margin: 0 4px 8px 4px;
-  transition: 0.3s;
-  border-radius: 50px;
-  border: 1px solid #fff;
-}
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #4154f1;
-  border-color: #4154f1;
-}
-.portfolio #portfolio-flters li:last-child {
-  margin-right: 0;
-}
-.portfolio .portfolio-wrap {
-  transition: 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  background: rgba(255, 255, 255, 0.75);
-}
-.portfolio .portfolio-wrap::before {
-  content: "";
-  background: rgba(255, 255, 255, 0.75);
-  position: absolute;
-  left: 30px;
-  right: 30px;
-  top: 30px;
-  bottom: 30px;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
-}
-.portfolio .portfolio-wrap img {
-  transition: 1s;
-}
-.portfolio .portfolio-wrap .portfolio-info {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.portfolio .portfolio-wrap .portfolio-info::before {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  top: 35px;
-  left: 35px;
-  border-top: 3px solid rgba(1, 41, 112, 0.2);
-  border-left: 3px solid rgba(1, 41, 112, 0.2);
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
-}
-.portfolio .portfolio-wrap .portfolio-info::after {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  bottom: 35px;
-  right: 35px;
-  border-bottom: 3px solid rgba(1, 41, 112, 0.2);
-  border-right: 3px solid rgba(1, 41, 112, 0.2);
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
-}
-.portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
-  color: #012970;
-  font-weight: 700;
-}
-.portfolio .portfolio-wrap .portfolio-info p {
-  color: #012970;
-  font-weight: 600;
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-}
-.portfolio .portfolio-wrap .portfolio-links {
-  text-align: center;
-  z-index: 4;
-}
-.portfolio .portfolio-wrap .portfolio-links a {
-  color: #fff;
-  background: #4154f1;
-  margin: 10px 2px;
-  width: 36px;
-  height: 36px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  transition: 0.3s;
-}
-.portfolio .portfolio-wrap .portfolio-links a i {
-  font-size: 24px;
-  line-height: 0;
-}
-.portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: #5969f3;
-}
-.portfolio .portfolio-wrap:hover img {
-  transform: scale(1.1);
-}
-.portfolio .portfolio-wrap:hover::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 1;
-}
-.portfolio .portfolio-wrap:hover .portfolio-info {
-  opacity: 1;
-}
-.portfolio .portfolio-wrap:hover .portfolio-info::before {
-  top: 15px;
-  left: 15px;
-}
-.portfolio .portfolio-wrap:hover .portfolio-info::after {
-  bottom: 15px;
-  right: 15px;
-}
-
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-}
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #4154f1;
-}
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #4154f1;
-}
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-}
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-.portfolio-details .portfolio-info ul li + li {
-  margin-top: 10px;
-}
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-.portfolio-details .portfolio-description p {
-  padding: 0;
+.whyus-section{
+	background: url('../img/why-pattern1.png'),url('../img/why-pattern2.png') ;
+	background-repeat:no-repeat no-repeat;
+	background-position:left 25px top, bottom right;
+	
 }
 
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials .testimonial-item {
-  box-sizing: content-box;
-  padding: 30px;
-  margin: 40px 30px;
-  box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
-  background: #fff;
-  min-height: 320px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  transition: 0.3s;
+	box-sizing: content-box;
+	padding: 70px 30px 0;
+	margin: 70px 30px 0;
+	box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
+	background: #fff;
+	min-height: 170px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	transition: 0.3s;
+	overflow: visible;
 }
 .testimonials .testimonial-item .stars {
   margin-bottom: 15px;
@@ -1438,7 +1136,7 @@ font-size: 18px;
   margin: 0 1px;
 }
 .testimonials .testimonial-item .testimonial-img {
-  width: 90px;
+  width:80px;
   border-radius: 50%;
   border: 4px solid #fff;
   margin: 0 auto;
@@ -1450,31 +1148,46 @@ font-size: 18px;
   color: #111;
 }
 .testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #999;
-  margin: 0;
+	font-size: 14px;
+	color: #676767;
+	margin: 0;
+	font-family: Poppins;
 }
 .testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 auto 15px auto;
+	font-style: italic;
+	margin: 0 auto;
+	font-size: 13px;
 }
 .testimonials .swiper-pagination {
-  margin-top: 20px;
+  margin-top:50px;
   position: relative;
 }
 .testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #4154f1;
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	opacity: 1;
+	border: 1px solid #ff8a00;
 }
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #4154f1;
+  background-color:#ff8a00;
 }
 .testimonials .swiper-slide {
   opacity: 0.3;
 }
+.testimonials {
+  background:#f2f2f2;
+}
+.testimonials .content, .recent-blog-posts .content {
+	background: transparent;
+	padding-bottom: 10px;
+}
+.testimonials .testimonial-item .testimonial-img {
+	margin-top: -107px;
+	position: relative;
+	z-index: 9;min-height: 78px;
+}
+
 @media (max-width: 1199px) {
   .testimonials .swiper-slide-active {
     opacity: 1;
@@ -1623,26 +1336,35 @@ font-size: 18px;
   transition: 0.5s;
 }
 .recent-blog-posts .post-box .post-date {
-  font-size: 16px;
-  font-weight: 600;
-  color: rgba(1, 41, 112, 0.6);
-  display: block;
-  margin-bottom: 10px;
+	font-size: 14px;
+	font-weight: 500;
+	color: rgba(88, 88, 89, 1);
+	display: block;
+	margin-bottom: 10px;
+}
+.recent-blog-posts .post-box .post-date .bi {
+	position: relative;
+	top: -4px;
+	margin-right: 5px;
+	color: #ff8a00;
 }
 .recent-blog-posts .post-box .post-title {
-  font-size: 24px;
-  color: #012970;
-  font-weight: 700;
-  margin-bottom: 18px;
-  position: relative;
-  transition: 0.3s;
+	font-size: 19px;
+	color:#48484a;
+	font-weight: 500;
+	margin-bottom: 18px;
+	position: relative;
+	transition: 0.3s;
+	font-family: Poppins;
+	text-transform: none;
 }
 .recent-blog-posts .post-box .readmore {
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  line-height: 1;
-  transition: 0.3s;
+	display: flex;
+	align-items: center;
+	font-weight: 500;
+	line-height: 1;
+	transition: 0.3s;
+	color: #ff8a00;
 }
 .recent-blog-posts .post-box .readmore i {
   line-height: 0;
@@ -1650,122 +1372,11 @@ font-size: 18px;
   font-size: 18px;
 }
 .recent-blog-posts .post-box:hover .post-title {
-  color: #4154f1;
+	color: #2c2724;
 }
 .recent-blog-posts .post-box:hover .post-img img {
   transform: rotate(6deg) scale(1.2);
 }
-
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
-.contact .info-box {
-  color: #444444;
-  background: #fafbff;
-  padding: 30px;
-}
-.contact .info-box i {
-  font-size: 38px;
-  line-height: 0;
-  color: #4154f1;
-}
-.contact .info-box h3 {
-  font-size: 20px;
-  color: #012970;
-  font-weight: 700;
-  margin: 20px 0 10px 0;
-}
-.contact .info-box p {
-  padding: 0;
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-.contact .php-email-form {
-  background: #fafbff;
-  padding: 30px;
-  height: 100%;
-}
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-.contact .php-email-form input, .contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  border-radius: 0;
-}
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: #4154f1;
-}
-.contact .php-email-form input {
-  padding: 10px 15px;
-}
-.contact .php-email-form textarea {
-  padding: 12px 15px;
-}
-.contact .php-email-form button[type=submit] {
-  background: #4154f1;
-  border: 0;
-  padding: 10px 30px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 4px;
-}
-.contact .php-email-form button[type=submit]:hover {
-  background: #5969f3;
-}
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
@@ -2187,60 +1798,14 @@ font-size: 18px;
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  background: #f6f9ff;
-  padding: 0 0 30px 0;
+  background:#4a4a4a;
+  padding:0;
   font-size: 14px;
 }
-.footer .footer-newsletter {
-  padding: 50px 0;
-  background: #f6f9ff;
-  border-top: 1px solid #e1ecff;
-}
-.footer .footer-newsletter h4 {
-  font-size: 24px;
-  margin: 0 0 10px 0;
-  padding: 0;
-  line-height: 1;
-  font-weight: 700;
-  color: #012970;
-}
-.footer .footer-newsletter form {
-  margin-top: 20px;
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 4px;
-  border: 1px solid #e1ecff;
-}
-.footer .footer-newsletter form input[type=email] {
-  border: 0;
-  padding: 8px;
-  width: calc(100% - 140px);
-}
-.footer .footer-newsletter form input[type=submit] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 30px;
-  margin: 3px;
-  background: #4154f1;
-  color: #fff;
-  transition: 0.3s;
-  border-radius: 4px;
-}
-.footer .footer-newsletter form input[type=submit]:hover {
-  background: #5969f3;
-}
 .footer .footer-top {
-  background: white url(../img/footer-bg.png) no-repeat right top;
-  background-size: contain;
-  border-top: 1px solid #e1ecff;
-  border-bottom: 1px solid #e1ecff;
-  padding: 60px 0 30px 0;
+	background: #4a4a4a;
+	background-size: contain;
+	padding:60px 0 0 0;
 }
 @media (max-width: 992px) {
   .footer .footer-top {
@@ -2255,7 +1820,7 @@ font-size: 18px;
   margin-bottom: 15px;
 }
 .footer .footer-top .footer-info .logo img {
-  max-height: 40px;
+  max-height: 55px;
   margin-right: 6px;
 }
 .footer .footer-top .footer-info .logo span {
@@ -2267,29 +1832,35 @@ font-size: 18px;
   margin-top: 3px;
 }
 .footer .footer-top .footer-info p {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 0;
-  font-family: "Nunito", sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 0;
+	color: #ccc;
 }
 .footer .footer-top .social-links a {
-  font-size: 20px;
-  display: inline-block;
-  color: rgba(1, 41, 112, 0.5);
-  line-height: 0;
-  margin-right: 10px;
-  transition: 0.3s;
+	font-size: 20px;
+	display: inline-block;
+	color: #ddd;
+	line-height: 0;
+	margin-right: 10px;
+	transition: 0.3s;
+	border-radius: 50%;
+	border: solid 2px #ddd;
+	padding: 8px 0;
+	width: 41px;
+	text-align: center;
 }
+.footer .footer-top .social-links a:hover{background:#ff8a00;border-color:#ff8a00;}
 .footer .footer-top .social-links a:hover {
-  color: #012970;
+  color: #fff;
 }
 .footer .footer-top h4 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #012970;
-  text-transform: uppercase;
-  position: relative;
-  padding-bottom: 12px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #ddd;
+	text-transform: uppercase;
+	position: relative;
+	padding-bottom: 12px;
 }
 .footer .footer-top .footer-links {
   margin-bottom: 30px;
@@ -2323,16 +1894,53 @@ font-size: 18px;
   color: #4154f1;
 }
 .footer .footer-top .footer-contact p {
-  line-height: 26px;
+	line-height: 26px;
+	color: #ddd;
 }
 .footer .copyright {
-  text-align: center;
-  padding-top: 30px;
-  color: #012970;
+	padding: 50px 0 20px;
+	color: #ddd;
 }
 .footer .credits {
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
   color: #012970;
+}
+.footer .footer-top .footer-info .logo2 {
+	margin-top: 40px;
+}
+.footer .footer-top .footer-info .logo2 img {
+	max-height: 48px;
+}
+.ft-list {
+	padding: 0;
+	margin: 0;
+}
+.ft-list li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 35px;
+}
+.ft-list li a {
+	color: #ddd;
+	position: relative;
+	transition: all 0.3s ease 0a;
+}
+.ft-list li a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	width:0;
+	height: 2px;
+	background:#ff8a00;
+	bottom: -2px;
+	transition: all 0.3s ease 0s;
+}
+.ft-list li:hover a::after {
+	width:100%;
+}
+.ft-list li:hover a{color:#fff;}
+.fb-right .ft-list {
+	text-align: right;
 }
